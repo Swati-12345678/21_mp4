@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Mini Project-4</title>
+  
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    html {
+      font: 1.2em/1.4 Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      padding: 0 0 1em;
+    }
+    body {
+                      background: url("images/05.jpeg");
+                      background-repeat: no-repeat ;
+                      background-size: cover;
+                    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      border: 5px solid #000;
+    }
+
+    header ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    header a {
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      padding: 0.5em 1em;
+      /*border-top: 1px solid #999;*/
+    }
+
+    header .title {
+      font-size: 150%;
+      font-style: italic;
+      font-weight: bold;
+      padding: 1em;
+    }
+
+    main {
+      padding: 0 1em;
+    }
+
+    .cards {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .cards li {
+      border: 1px solid #000;
+
+      padding: 10px;
+    }
+
+    .cards h2 {
+      background-color: #333;
+      color: #fff;
+      margin: 0;
+      padding: 0.5em 1em;
+    }
+
+    .cards .inner {
+      padding: 0.5em 1em;
+    }
+
+    .sidebar {
+      background-color: #333;
+      border: 5px solid #000;
+      padding: 0.5em 1em;
+      color: #fff;
+      margin: 0.5em;
+    }
+
+    @media screen and (min-width: 40em) {
+
+      header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      header .title {
+        flex: 2
+      }
+
+      header nav {
+        flex: 1
+      }
+
+      article {
+        display: cards;
+        grid-template-columns: 3fr 1fr;
+        column-gap: 20px;
+      }
+
+      nav ul {
+        display: flex;
+      }
+
+      nav li {
+        flex: 1;
+
+      }
+    }
+
+    @media screen and (min-width: 70em) {
+      main {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        column-gap: 20px;
+      }
+
+      article {
+        margin-bottom: 0;
+      }
+
+      footer {
+        border-top: 1px solid #ccc;
+        margin-top: 2em;
+      }
+
+    }
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <header>
+    <div class="title"><h2>Baan Thai</h2></div>
+    <nav>
+      <ul>
+        <li>
+          <a href="https://baanthaiin.wordpress.com/">Home</a>
+        </li>
+        <li>
+          <a href="https://baanthaiin.wordpress.com/">About</a>
+        </li>
+        <li>
+          <a href="https://baanthaiin.wordpress.com/contact/">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main>
+    <article>
+      <h1>Voted Fort Wayne's Best Thai Restaurant</h1>
+      <p>The Baan Thai restaurant in Fort Wayne, Indiana makes great use of high-resolution pictures to draw in website visitors. Color abounds wherever you look and the vivid representations of the Thai region make you feel like you’re already there.</p>
+
+      <p>Don’t settle for washed-out, blurry photos on your website. If need be, hire a professional photographer or purchase high-resolution photos online to give your website the extra kick it needs.</p>
+
+      <ul class="cards">
+        <li>
+          <h2>HOME</h2>
+          <div class="inner">
+            <p>Welcome to Baan Thai restaurant. We have been providing fresh, fast, and friendly Thai food to northeast Indiana since 2002. Baan Thai isn’t just about authentic Thai food, it specializes in high standard, fresh and healthy food with affordable prices. Our food is cooked fresh to the customer’s order and taste. You are guaranteed the freshness of your order.</p>
+          </div>
+        </li>
+        <li>
+          <h2>ABOUT</h2>
+          <div class="inner">
+            <p>Rice and varied natural scenery ranges from the northern misty mountains and jungles, through emerald rice field in the central plains, the east coast and southern palm-fringed beaches and lush tropical islands. Average temperatures of 28 degrees Celsius make the climate predominantly warm and sunny, though northern hills become somewhat chilly during December and January.</p>
+          </div>
+        </li>
+        <li>
+          <h2>DINNING</h2>
+          <div class="inner">
+            <p>Our restaurant is beautifully decorated to reflect our Thai culture. Besides enjoying the Thai food, you will feel like you were in Thailand with soft Thai music in the background. At our new location on North Anthony Blvd, we are able to accommodate many patrons. Even with the extra space we recommend calling ahead to make a reservation if you plan to have a party of 6 or more.</p>
+          </div>
+        </li>
+        <li>
+          <h2>MENU</h2>
+          <div class="inner">
+            <p>At Baan Thai, there are a wide variety of Thai dishes, from very spicy to not spicy at all. Children can have plenty of non-spicy, but tasty dishes to choose from, such as Fried Rice, Pud Thai, or Chicken Sateh. If you are new to Thai food, we recommend that you start off with a non-spicy dish.</p>
+          </div>
+        </li>
+        <li>
+          <h2>CONTACT</h2>
+          <div class="inner">
+            <p>Thank you for visiting our website. Please come visit Baan Thai and enjoy one of Fort Wayne’s finest asian restaurants. We have been voted “Best Thai Restaurant” in 2008, 2009, 2010, 2011, 2012, 2013, 2014 and 2015 by Fort Wayne Newspapers.</p>
+
+             <p> Baan Thai
+              3235 North Anthony Blvd
+              Fort Wayne, IN  46805
+              260-471-2929</p>
+          </div>
+        </li>
+
+      </ul>
+    </article>
+    <aside class="sidebar">
+      <p>Have you discovered all of the other excellent content on this website?</p>
+
+    </aside>
+  </main>
+
+</body>
+
+</html>
